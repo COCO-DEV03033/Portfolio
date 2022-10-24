@@ -1,0 +1,40 @@
+.blink-1 {
+  -webkit-animation: blink-1 5s infinite both;
+  animation: blink-1 5s infinite both;
+}
+
+@-webkit-keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.fancy_card1:hover {
+  transform: translate3D(0, -1px, 0) scale(1.2);
+  box-shadow: 8px 28px 50px rgba(39, 44, 49, 0.07),
+    1px 6px 12px rgba(39, 44, 49, 0.04);
+  transition: all 0.4s ease;
+}
+
+.fancy_card1 {
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+    1px 3px 8px rgba(39, 44, 49, 0.03);
+  transition: all 0.5s ease; /* back to normal */
+}
